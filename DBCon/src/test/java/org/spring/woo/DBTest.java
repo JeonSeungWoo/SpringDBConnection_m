@@ -14,13 +14,24 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class DBTest {
 
 	
+//	@Test
+//	public void DBConnectionTest() throws Exception {
+//	Class.forName("oracle.jdbc.driver.OracleDriver");
+//	Connection con = DriverManager.getConnection(
+//	"jdbc:oracle:thin:@192.168.0.33:1521:myoracle",
+//	"ora_user",
+//	"woo");
+//	System.out.println(con);
+//	con.close();
+//	}
+	
 	@Test
 	public void DBConnectionTest() throws Exception {
-	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Class.forName("org.postgresql.Driver");
 	Connection con = DriverManager.getConnection(
-	"jdbc:oracle:thin:@localhost:1521:myoracle",
-	"ora_user",
-	"woo");
+	"jdbc:postgresql://localhost:5432/postgres",
+	"postgres",
+	"1234");
 	System.out.println(con);
 	con.close();
 	}
