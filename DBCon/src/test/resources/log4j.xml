@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="org.spring.woo">
+	<logger name="org.woo">
 		<level value="info" />
 	</logger>
 	

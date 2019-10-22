@@ -1,4 +1,4 @@
-package org.spring.woo.test.dao;
+package org.woo.test.dao;
 
 
 public interface TestDAO {

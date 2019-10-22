@@ -44,6 +44,6 @@
 			ref="sqlSessionFactory"></constructor-arg>
 	</bean>
 	
-     <context:component-scan base-package="org.spring.woo.test.dao" />
+     <context:component-scan base-package="org.woo.test.dao" />
      
 </beans>

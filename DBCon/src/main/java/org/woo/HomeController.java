@@ -1,4 +1,4 @@
-package org.spring.woo;
+package org.woo;
 
 import java.text.DateFormat;
 import java.util.Date;
