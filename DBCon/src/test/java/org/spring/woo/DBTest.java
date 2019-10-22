@@ -25,16 +25,31 @@ public class DBTest {
 //	con.close();
 //	}
 	
+//	@Test
+//	public void DBConnectionTest() throws Exception {
+//	Class.forName("org.postgresql.Driver");
+//	Connection con = DriverManager.getConnection(
+//	"jdbc:postgresql://localhost:5432/postgres",
+//	"postgres",
+//	"1234");
+//	System.out.println(con);
+//	con.close();
+//	}
+	
 	@Test
 	public void DBConnectionTest() throws Exception {
-	Class.forName("org.postgresql.Driver");
+    //mysql driver name 5version
+	//com.mysql.jdbc.Driver
+	//8버전 부터 driver name이 변경 되었고 Timezone을 설정하도록 변경 되었다. (&amp;   ==   &  랑 같고 xml에서는 &을 읽지 못한다.)
+	Class.forName("com.mysql.cj.jdbc.Driver");
 	Connection con = DriverManager.getConnection(
-	"jdbc:postgresql://localhost:5432/postgres",
-	"postgres",
+	"jdbc:mysql://localhost:3306/foodmap?useSSL=false&serverTimezone=Asia/Seoul",
+	"woo",
 	"1234");
 	System.out.println(con);
 	con.close();
 	}
+	
 	
 
 }

@@ -97,7 +97,13 @@
 			<artifactId>postgresql</artifactId>
 			<version>9.0-801.jdbc4</version>
 		</dependency> -->
-
+		
+      <!-- Mysql  8.0 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.13</version>
+		</dependency>
 
 
 		<!-- AspectJ -->
